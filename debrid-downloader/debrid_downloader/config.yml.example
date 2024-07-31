@@ -1,0 +1,14 @@
+sonarr##### Real-Debrid API Key #####
+api_key: 
+
+#### Sonarr Configuration ####
+sonarr_host: 
+sonarr_port: 
+sonarr_api_key: 
+sonarr_blackhole_dir: 
+
+#### Radarr Configuration ####
+radarr_host: 
+radarr_port: 
+radarr_api_key: 
+radarr_blackhole_dir: 
