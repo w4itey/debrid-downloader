@@ -8,7 +8,6 @@ class debrid:
     def __init__(self, config) -> None:
         self.url_base = "https://api.real-debrid.com/rest/1.0/"
         self.api_key = config["api_key"]
-        self.
 
     def request(self, url, type, body=None):
         headers = {"Authorization": f"Bearer {self.api_key}"}
