@@ -8,6 +8,9 @@ class ingest(Model):
     filename = CharField()
     hash = CharField()
     magnet = TextField()
+    service = CharField()
 
     class Meta:
         database = db 
+
+

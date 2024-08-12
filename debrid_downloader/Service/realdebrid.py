@@ -31,12 +31,7 @@ class debrid:
 
     def get_torrent_hash(self, filename, isRadarr=True):
 
-        if isRadarr == True:
-            magnet = f"{self.radarr_watch_folder}/{filename}"
-        elif isRadarr == False:
-            magnet = f"{self.sonarr_watch_folder}/{filename}"
-
-        with open(magnet) as t:
+        with open(filename) as t:
             torrent = t.read()
         p = re.search("btih:(.*)&dn", torrent)
         magnet_hash = p.group(1)
